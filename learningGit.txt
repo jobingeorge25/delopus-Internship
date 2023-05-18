@@ -1,0 +1,5 @@
+basic commands
+*cd:  used to change directory
+*cd --: used to go to parent directory
+*mkdir :creates directory
+*ls : lists the contents of current directory
