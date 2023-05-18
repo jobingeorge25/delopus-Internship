@@ -1,0 +1,16 @@
+basic commands
+*cd:  used to change directory
+*cd --: used to go to parent directory
+*mkdir :creates directory
+*ls : lists the contents of current directory
+
+git commands
+*git config --global user.name :used to configure user name
+*git config --global user.email:used to configure email 
+*git clone https://github.com/jobingeorge25/sampleRepoName.git :creates clone of repo in local directory
+*git add filename.file : to add file to git
+*git status : to show current status of git
+*git commmit -m "commit message" filename.file : commits file to repo
+*git push -u origin master :pushes file to repo
+
+hello there
