@@ -9,7 +9,13 @@ git commands
 *git config --global user.email:used to configure email 
 *git clone https://github.com/jobingeorge25/sampleRepoName.git :creates clone of repo in local directory
 *git add filename.file : to add file to git
+*git add . :to stage changes before commiting
 *git status : to show current status of git
 *git commmit -m "commit message" : commits file to repo
 *git push origin <branchname> :pushes file to repo
-
+*git pull origin <branchname> :pull file from remote to local 
+*git branch : indicates current branch
+*git branch <new branchname> : creates new branch              
+    //must add,commit and push for changes to be relfected in repo 
+*git checkout <branchname>: to switch to another branch
+*git checkout -b <branchname>: to create and switch to the newly created branch
