@@ -10,7 +10,6 @@ git commands
 *git clone https://github.com/jobingeorge25/sampleRepoName.git :creates clone of repo in local directory
 *git add filename.file : to add file to git
 *git status : to show current status of git
-*git commmit -m "commit message" filename.file : commits file to repo
-*git push -u origin master :pushes file to repo
+*git commmit -m "commit message" : commits file to repo
+*git push origin <branchname> :pushes file to repo
 
-hello there
