@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Links</title>
+    <link rel="stylesheet" href="day3style.css">
+</head>
+
+<body style="background-color: beige;">
+    <h1 id="begin">Links in HTML</h1>
+    <br>
+        <h2>Skip to section:</h2>
+            <pre>       <a href="#intro">I.Introduction</a></pre>
+            <pre>       <a href="#color">II.Link Colors</a></pre>
+            <pre>       <a href="#bkmark">III.Bookmarks</a></pre>
+    <br>
+    <!--the above links are bookmark links to jump to that section of the page-->
+    <!--escape char for tab=&emsp;-->
+    <br>
+    
+    
+    <!--SECTION 1-->
+
+
+    <h3 id="intro">I Introduction</h3>
+    <p>Links are defined using the &lt;a&gt; tag</p>
+    <ul>
+        <li>href attribute provides the link</li>
+        <li>target specifies how the link will be opened</li>
+    </ul>
+    <!--above we are making use of an unordered list(ul) element in html-->
+
+    <p>By default links provided are opened in the same browser window</p>
+    <a href="https://www.w3schools.com/html/html_links.asp">Example</a>
+    <p>The target atttribute has the following options </p>
+    <ol>
+        <li>
+            self - <a href="https://www.w3schools.com/html/html_links.asp" 
+            target="_self">default</a>
+        </li>
+        <li>
+            blank -<a href="https://www.w3schools.com/html/html_links.asp" 
+            target="_blank">opens in new window/tab</a>
+        </li>
+        <li>
+            parent -<a href="https://www.w3schools.com/html/html_links.asp" 
+            target="_parent">opens in new window/tab</a>
+        </li>
+        <li>
+            top -<a href="https://www.w3schools.com/html/html_links.asp" 
+            target="_top">opens in new window/tab</a>
+        </li>
+        <!--parent and top are used when we have divided our oage into subparts
+             and want to open a link and display within that segment-->
+    </ol>
+    <!--The Links we have used above are absolute links where the entire url is specified-->
+    <!--We can also use relative urls to access a page within our page-->
+    <!--if our page was youtube and we want to go to a particular video 
+        we can use /watch?v=Oi96WozulP0 instead of https://www.youtube.com/ in our href attribute-->
+        <p>We can insert an img element within a link instead of text</p>
+        <a href="https://www.delopus.com/" target="_blank">
+            <img src="pics/Delopus logo4.png" 
+                    style="width: 20%; 
+                    height:auto";>
+        </a>
+        <p>we can use mailto: within href to send mail to the given id</p>
+        <br>
+        <br>
+        <p style="text-align: right;">
+            <a href="#begin">
+            GO BACK TO BEGINNING OF PAGE</a>
+        </p>
+        
+
+        <!--SECTION 3-->
+
+
+
+        <h3 id="color">II LINK COLORS</h3>
+        <br>
+        <p>Link Colors - shown below are the default color settings </p>
+        <ul>
+            <li>unvisited   -blue</li>
+            <li>visited     -purple</li>
+            <li>active      -red</li>
+        </ul>
+        <!--the default links are underlined-->
+        <!--We can change the color,text decoration and hover properties using css as done for this page-->
+        <p>We can change the color,text decoration and hover properties using css</p>
+        <p>All the links on this page have been formatted using css</p>
+        <br>
+        <p style="text-align: right;">
+            <a href="#begin">
+            GO BACK TO BEGINNING OF PAGE</a>
+        </p>
+        <br>
+
+        <!--SECTION 3-->
+
+
+        <h3 id="bkmark">III BOOKMARKS</h3>
+        <br>
+        <p>Links can be used to take the user to different parts of the page</p>
+        <p>Such links are called bookmark links</p>
+        <p>This page uses bookmark links in two ways</p>
+        <ol>
+            <li>Skip to section</li>
+            <li>Go back to begining</li>
+        </ol>
+        <p style="text-align: right;">
+            <a href="#begin">
+            GO BACK TO BEGINNING OF PAGE</a>
+        </p>
+</body>
+
+</html>

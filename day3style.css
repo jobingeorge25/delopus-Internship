@@ -1,0 +1,40 @@
+/*to format headings*/
+h1{
+    background-color: midnightblue;
+    color :beige;    
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+h2{
+    color:midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    background-color: midnightblue;
+    padding: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 10%;
+    color :beige;    
+    text-align: center;
+}
+/*to format links*/
+a:link{
+    color:slateblue;
+    text-decoration: underline double;
+}
+
+a:visited{
+    color:  midnightblue;
+    text-decoration: underline; 
+}
+ 
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color:beige;
+    background-color: midnightblue;
+}
