@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day4-Images</title>
+    <link rel="icon" type="image/x-icon" href="pics/dice.png">
+    <link rel="stylesheet" href="day4style.css">
+</head>
+<body 
+    style="background-image: url(pics/gradient-peach-background-with-pink-shades.jpg);
+    background-size: cover;">
+    <h1>Images</h1>
+    
+    <h2>I Intro</h2>
+    <p>Images are actually just placeholders for the image which is then referenced by a link</p>
+
+    <p>The two basic attributes of the image element are:</p>
+    <ul>
+        <li>src- to specify source/path if image </li>
+        <li>alt- displays the given text incase there is an image in loading the image</li>
+    </ul>
+    <p>We can specify the dimensions of an image using either</p>
+    <ul>
+        <li>width and height attributes</li>
+        <li>using style</li>
+    </ul>
+    <p> Using the style attribute is preferred so that sty;e sheets will not be able to change the image<br>
+        We can use float attribute to make an image appear next to our text</p>
+    <br>
+    <h2>II Image Map</h2>
+    <p>An image map is a map in which we can define clickable areas</p>
+    <img src="pics/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" 
+    style="width: 250px; height: auto; float: right;
+    margin: 50px; margin-right: 200px;"
+    usemap="#stackpics">
+    <!--float attribute has been used in this image-->
+    <p>Steps to create a map:</p>
+    <ol>
+        <li>add usemap attribute to the image that will serve as the map</li>
+        <li>create map element</li>
+        <li>define areas using area element and specify coordinates</li>
+        <li>add link in area element</li>
+    </ol> 
+    <p> We can use the following shapes :rect,circle,poly,default<br>
+        This concept has been used on the image with the html,css and js logos<br>
+        Clicking on any of them takes you to their respective wikipedia site</p>
+
+    <map name="stackpics">
+        <area shape="rect" coords="0,0,83,97"
+        href="https://en.wikipedia.org/wiki/HTML"
+        target="_blank">
+        <area shape="rect" coords="85,0,166,97"
+        href="https://en.wikipedia.org/wiki/CSS"
+        target="_blank">
+        <area shape="rect" coords="168,0,250,97"
+        href="https://en.wikipedia.org/wiki/JavaScript"
+        target="_blank">
+    </map>
+
+    <h2>III Background Images</h2>
+        
+    <p> We can use as an image as the background for an element or even for the entire page<br>
+        For an element we may either specify it in the style attribute or or specify it in head<br>
+        To assign a background image for the entire page it must be specified within the body</p>
+        <!--Background images tend to repeat themselves when they are smaller than the elements-->
+        <!--This property can be disabled using background-repeat:no-repeat-->
+        <!--Other related attributes: background-size,background-attachment-->
+    <h2>IV Picture element</h2>
+        <p>
+        The picture element is used to provide multiple sources for the same image<br>
+        We can use this to select the most suitable image based on the device of the user<br>
+        This feature can also be used to provide different formats of the same image incase one is not suppported<br>
+        It is recommended to use the &lt;img&gt; attribute at the end of all the different options<br>
+        This image will be used if &lt;picture&gt; attribute isnt supported by the browser or if none of the other sources are supported
+        </p>
+    
+    <h2>V Favicon</h2>
+    <p>
+        A small image displayed on the title bar is called the favicon<br>
+        To add a favicon: 
+        <ol>
+            <li>add a link element in the head section</li>
+            <li>rel attribute must be assigned to 'icon'</li>
+            <li>type attribute -"image/x-icon"</li>
+            <li>then specify href</li>
+        </ol>
+    </p>
+    <p> Image credits:<br>
+        Favicon-
+        <a href="https://www.flaticon.com/free-icons/casino" title="casino icons">
+        Casino icons created by bqlqn - Flaticon</a>
+    <br>Background-
+        <a href="https://www.freepik.com/free-photo/gradient-peach-background-with-pink-shades_16018194.htm#query=gradient%20beige&position=0&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
+    </p>
+</body>
+</html>
