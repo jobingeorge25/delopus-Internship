@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 5 - Assignment 1</title>
+    <style>
+        .contOuter{
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .contInner{
+            grid-template-columns: auto auto auto;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px;           
+        }
+
+        .item{
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+        .itemInner{
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contOuter">
+        <div class="item"><header>Header</header></div>
+        <div class="item"><nav>Navigation</nav></div>
+        <div class="contInner" title="Content">
+            <div class="itemInner">Side</div>
+            <div class="itemInner">Main</div>
+            <div class="itemInner">Side</div>
+        </div>
+        <div class="item"><footer>Footer</footer></div>
+    </div>
+    
+</body>
+</html>
