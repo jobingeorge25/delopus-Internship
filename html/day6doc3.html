@@ -3,41 +3,51 @@
 
 <head>
     <title>Day 6 - Forms</title>
+    <link rel="stylesheet" href="/html/styles/day6style3.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <h2>Forms</h2>
+    <div id="form">
+        <h2>Forms</h2>
 
-    <form>
-        <fieldset style="max-width:fit-content;">
-            <legend>Personal Details</legend>
-            <label for="fname">First Name : </label><br>
-            <input type="text" id="fname"><br>
-            <label for="lname">Last Name : </label><br>
-            <input type="text" id="lname"><br>
-            <br>
-            <label for="DOB">Enter Date of Birth:</label><br>
-            <input type="date" id="DOB"><br>
-            <br>
-            <label for="email">Enter Email ID :</label>
-            <input type="email">
-        </fieldset>
-
-        <label>Send promotional emails to the above email id?</label><br>
-        <input type="radio" id="y" name="Y/N">
-        <label id="y">Yes</label>
-        <input type="radio" id="n" name="Y/N">
-        <label id="n">No</label><br>
-        <br>
-        <input type="submit" value="SUBMIT">
-        <input type="reset">
-    </form>
-
+        <form>
+            <fieldset id="fd1" style="max-width:fit-content;">
+                <legend>Personal Details</legend>
+                <label for="fname">First Name : </label><br>
+                <input type="text" id="fname"><br>
+                <label for="lname">Last Name : </label><br>
+                <input type="text" id="lname"><br>
+                <br>
+                <label for="DOB">Enter Date of Birth:</label><br>
+                <input type="date" id="DOB"><br>
+                <br>
+                <label for="email">Enter Email ID :</label>
+                <input type="email">
+            </fieldset>
+            <fieldset id="fd2">
+                <label>Send promotional emails to the above email id?</label><br>
+                <input type="radio" id="y" name="Y/N">
+                <label id="y">Yes</label>
+                <input type="radio" id="n" name="Y/N">
+                <label id="n">No</label><br>
+                <br>
+                <div id="buttons">
+                    <input id="sub" type="submit" value="SUBMIT"
+                    onclick="alertFunc()">
+                    <input id="res" type="reset"  value="RESET">
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <!--input fields are for the user to enter data-->
     <!--labels provide information regarding what data is meant to be entered-->
-
+    <script>
+        function alertFunc(){
+            alert("Your response has been submitted");
+        }
+    </script>
 </body>
 
 </html>

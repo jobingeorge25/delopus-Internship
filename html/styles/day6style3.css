@@ -1,0 +1,64 @@
+body{
+    background-color:#915900;
+    align-content: center;
+    padding: 20px;
+}
+#form{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #fca311;
+}
+
+h2{
+    text-transform: uppercase;
+    padding:  10px 40px;
+}
+label{
+    color: #ffffff;
+}
+
+input{
+    padding:10px;
+    border-radius: 5px;
+    background-color: #9a9a9a;
+}
+legend{
+    font-variant: small-caps;
+    font-size: larger;
+    border-bottom: 2px solid ;
+    color: white;
+}
+
+#fd1{
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #14213d;
+}
+#fd2{
+    border:2px solid #14213d;
+    border-radius: 7px;
+    display: inline;
+    margin-left: 15px;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+}
+
+#res:hover{
+    background-color: #14213d;
+    color:#ffffff;
+}
+
+#sub:hover{
+    background-color: #14213d;
+    color:#ffffff;
+}
