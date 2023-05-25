@@ -1,0 +1,39 @@
+body{
+    counter-reset: head;
+    background-image: linear-gradient(45deg, #628898ff 50%,#9fb1bcff 40%) ;
+    background-attachment: fixed;
+    
+}
+/*#2e5266ff 10%*/
+h2{
+    background-image: linear-gradient(45deg, #7f7f7f,white, silver);
+    width: 20%;
+    border-radius: 3px;
+    padding: 7px;
+    /*color: #2e5266ff;*/
+}
+h2:hover{
+    cursor:pointer;
+}
+/*
+h2::before{
+    counter-increment: head;
+    content: counter(head)". "; 
+}*/
+/*specifity precedence
+    inline > id > class > element name
+    use !important to override specificity
+*/
+p{
+    text-align: justify;
+}
+
+
+#cont1,#cont2,#cont3{
+    max-width: 30%;
+    display: none;
+    margin-left: 25px;
+    padding: 10px;  
+    /*border: 1px solid #9fb1bcff;
+    */box-shadow: 0px 0px 20px 5px #9fb1bcff;
+}
