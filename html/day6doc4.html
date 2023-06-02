@@ -3,22 +3,33 @@
 
 <head>
     <title>Day 6 - Multimedia</title>
+    <link rel="stylesheet" href="styles/day6style4.css">
     <meta name="viewport" content="device-width ,initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <h2>Video</h2>
-    <video width="300" height="600" controls loop>
-        <source src="images/loop1.mp4" type="video/mp4">
-        Your browser does ot support this file format
-    </video>
-    <!--attributes controls, autoplay and loop-->
-    <!--chrome does not support autoplay but muted autoplay is allowed-->
-    <h2>Other media</h2>
-    <p>HTML also supports audio and plugins (embed and object tags). Another method is to use youtube videos in an
-        inline frame</p>
+    <div id="content">
+        <div id="vid">
+            <h2 id="vhead">Video</h2>
+            <video width="250" height="400" controls loop>
+                <source src="images/loop1.mp4" type="video/mp4">
+                Your browser does ot support this file format
+            </video>
+        </div>
+        <!--attributes controls, autoplay and loop-->
+        <!--chrome does not support autoplay but muted autoplay is allowed-->
+        <div id="other">
+            <h2>Other media</h2>
+            <p>HTML also supports audio and plugins (embed and object tags). Another method is to use youtube videos in
+                an
+                inline frame</p>
+        </div>
 
+    </div>
+    <div class="mask" id="logo">
+        <img id="pic" src="images/living room.jpg" width=100% height=auto>
+    </div>
 </body>
 
 </html>

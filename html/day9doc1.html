@@ -2,14 +2,28 @@
 <html>
 <head>
     <title>Day 9 - onclick events</title>
+    <style>
+        .hid{
+            visibility: hidden;
+        }
+        .vis{
+            visibility: visible;
+        }
+    </style>
 </head>
 <body> 
     <p id="pw">now you see me</p>
     <button 
     onclick="goAway()">bresss</button>
     <script>
+        var text= document.getElementById("pw");
         function goAway() {
-            document.getElementById("pw").style.visibility="hidden"; 
+            if(text.className=="vis"){
+                text.className="hid";   
+            }
+            else{
+                text.className="vis";
+            }
         }
     </script>
 </body>

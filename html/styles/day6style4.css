@@ -1,0 +1,65 @@
+:root{
+--prim:rgb(111, 65, 18);
+--sec:beige;
+--tert:#442f16;
+}
+body{
+    
+    background-color: var(--sec);
+}
+
+#vid, #other {
+    border: 5px solid  var(--prim);
+    color: var(--tert);
+    border-radius: 10px;
+    padding: 5px;
+    transition: color 1s;
+    }
+
+#vid:hover, #other:hover {
+    transform: matrix(1.25, 0, 0, 1.25,0,2  5);
+    background-color: var(--tert);
+    cursor:pointer;
+    color: var(--sec);
+}
+/*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+.mask{
+    -webkit-mask-image: url(/html/images/Delopus\ logo4.png);
+    mask-image: url(/html/images/Delopus\ logo4.png);
+    width: 1500px;
+    height: 600px;
+}   
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+/*
+#vid { 
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+*/
+#other {
+    max-width: 30%;
+    resize: both;
+    overflow: auto;
+}
+
+#logo{
+    position: fixed;
+    top:20%;
+    left: 23.5%;
+    transform: scale(0.3,0.3);    
+    
+}
+
+#logo:hover{
+    transform: scale(0.35  ,0.35);
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
