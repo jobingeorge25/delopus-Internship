@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Day 9 - onclick events</title>
-    <style>
-        .hid{
-            visibility: hidden;
-        }
-        .vis{
-            visibility: visible;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/day9style.css">
 </head>
-<body> 
-    <p id="pw">now you see me</p>
-    <button 
-    onclick="goAway()">bresss</button>
+
+<body id="page">
+    <p id="pw" class="vis">now you see me</p>
+    <button class="lm" id="b1" 
+    onclick="goAway()">bresss
+    </button><br>
+
+    <label id="lw" for="tbar">Change background color of page (hexcode or color name) :</label><br>
+    <input name="tbar" id="colInput" type="text" placeholder="blue or #45ef12">
+
+    <button class="lm" id="b2"
+    onclick="colorChange()">Enter
+    </button><br>
+
+    <br>
+
+    <button class="dm" onclick="dark()">
+        DARK THEME
+    </button>
+
+    <button class="lm" onclick="light()">
+        LIGHT THEME
+    </button>
     <script>
-        var text= document.getElementById("pw");
+
+        var text = document.getElementById("pw");
+        let bgCol = document.getElementById("colInput");
+        let pgCol = document.getElementById("page");
+
         function goAway() {
-            if(text.className=="vis"){
-                text.className="hid";   
+            if (text.className == "vis") {
+                text.className = "hid";
             }
-            else{
-                text.className="vis";
+            else {
+                text.className = "vis";
             }
         }
+        function colorChange() {
+            pgCol.style.backgroundColor = bgCol.value;
+        }
+
+        function dark() {
+            document.body.style.backgroundColor="#3c4659";
+            document.getElementById("pw").style.color="#abcdef";
+            document.getElementById("lw").style.color="#abcdef";
+            document.getElementById("b1").className="dm";
+            document.getElementById("b2").className="dm";
+            document.getElementById("b3").className="dm";
+        }
+        function light() {
+            document.getElementById("pw").style.color="#123456";
+            document.getElementById("lw").style.color="#123456";
+            document.body.style.backgroundColor="#ccd8f0";
+            document.getElementById("b1").className="lm";
+            document.getElementById("b2").className="lm";
+            document.getElementById("b3").className="dm";
+        }
+
+
     </script>
+
 </body>
+
 </html>
