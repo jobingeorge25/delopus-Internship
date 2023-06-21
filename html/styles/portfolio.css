@@ -1,0 +1,188 @@
+/***********General styles*******/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin:0;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-dark: #52796f;   /*234458*/
+    --primary-light: #84a98c;           /*446984*/
+    --secondary-dark: #2f3e46;
+    --secondary--light: #354f52;
+    --highlight: #ddeae7;
+    --heading1: "Fjalla One";
+    --heading2: "Abril Fatface";    /*serif*/
+    --text1:    "Urbanist";
+    --text2:    "Roboto Slab"       /*serif*/
+}
+
+body{  
+    background-color:var(--highlight);
+    margin:0;
+    padding-top: 5rem;
+}
+
+/*************Navbar**************/
+#navbar{
+background-color: var(--primary-dark);
+display: flex;
+padding-right: 2rem;
+width: 100%;
+flex-direction: row;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+overflow: hidden;
+z-index: 10;
+}
+ 
+nav ul li{
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  height: 100%;
+}
+nav ul li a{
+  color: var(--highlight);
+  position: relative;
+  text-transform: uppercase;
+  padding: 1.1rem 1.2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: var(--heading2), serif;
+  text-decoration: none;
+  transition: .4s ease;
+}
+nav ul li a:hover{
+  color:var(--primary-dark);
+  cursor: pointer;
+  position: relative;
+  background-color:var(--highlight);
+}
+
+/************Main****************/
+#main-wrapper{ 
+    display: grid;
+    height: 100vh;
+    position: relative;
+    grid-template-columns: 1.5fr 6fr;
+    margin-top: -1.4rem;
+    overflow-y: hidden;
+}
+
+.welcome{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  background-color:cad2c5;
+  z-index: -1;
+}
+
+.welcome h1{
+  color: var(--primary-dark);
+  font-variant: small-caps;
+  font-family: var(--heading2), sans-serif;
+  font-size: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 0;  
+}
+
+.welcome p{
+    margin-left: 5rem;
+    font-family: var(--text2);
+    color: var(--secondary-dark); 
+   /* width: 85%;
+*/}
+/*********Side-Bar**************/
+#side{
+    padding: 2rem 0;
+    position: relative;
+    height: 100%;
+    background-color: var(--primary-light);
+    z-index: 5;
+}
+
+#image-container{
+    background-color: var(--highlight);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay{
+    background-color: var(--primary-dark);
+    z-index: 12;
+    position: absolute;
+    width: 95%;
+    height: 95%;    
+    opacity: 0;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.overlay:hover{
+    opacity: 50%;
+}
+
+#side-img{
+    opacity: 100%;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    opacity: 100%;
+}
+
+.side-content-header{
+    font-family: var(--heading2),serif;
+    font-size: 2.5rem;
+    font-variant: small-caps ;
+    font-weight: bold;
+    color: var(--highlight);
+    border-bottom: 2px solid var(--highlight);
+    margin-left: 12%;
+    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    transition: .4s ease;
+}
+
+#side-content p,span{
+  font-family: var(--heading2);
+  color: var(--highlight)  ;
+  margin-left: 12%;
+}
+
+#side-content p{
+    font-size: larger; 
+  margin-bottom: 0%;
+}
+
+#side-content span{
+    font-size: medium   ;
+}
+    
+.side-content-header:hover{
+    cursor: pointer;
+    color: var(--secondary-dark);
+    border-bottom: 2px solid var(--secondary-dark);
+}
+
+.side-content-hidden{
+    opacity: 0%;
+    display: none;
+    transition: 4s ease;
+}
+
+.side-content-visible   {
+    opacity: 100%;
+    display: inline;
+}
