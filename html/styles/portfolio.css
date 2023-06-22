@@ -4,6 +4,7 @@
 }
 
 html{
+    height: 100%;
     margin:0;
     scroll-behavior: smooth;
 }
@@ -24,7 +25,10 @@ body{
     margin:0;
     padding-top: 5rem;
 }
-
+.page-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto
+}
 /*************Navbar**************/
 #navbar{
 background-color: var(--primary-dark);
@@ -37,6 +41,7 @@ position: fixed;
 top: 0;
 overflow: hidden;
 z-index: 10;
+
 }
  
 nav ul li{
@@ -62,8 +67,51 @@ nav ul li a:hover{
   position: relative;
   background-color:var(--highlight);
 }
+/************Main****************/
+#main-wrapper{ 
+    display: grid;
+    height: 100vh;
+    position: relative;
+    grid-template-columns: 1.5fr 6fr;
+    margin-top: -1.4rem;
+    /* overflow-y: hidden; */
+}
 
-    
+.welcome{
+  
+  width: 100%;
+  height: 100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  background-color:cad2c5;
+  z-index: -1;
+}
+
+.welcome h1{
+  color: var(--primary-dark);
+  font-variant: small-caps;
+  font-family: var(--heading2), sans-serif;
+  font-size: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 0;  
+}
+
+.welcome h2{
+    color: var(--secondary--dark);
+    font-family: var(--text1), sans-serif;
+    text-transform: uppercase;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.welcome p{
+    margin: 1rem 5rem;
+    font-family: var(--text2);
+    color: var(--secondary-light); 
+}    
 /*********Side-Bar**************/
 #side{
     padding: 2rem 0;
@@ -177,37 +225,17 @@ nav ul li a:hover{
 }
 
 
-/************Main****************/
-#main-wrapper{ 
-    display: grid;
-    height: 100vh;
+
+footer{
     position: relative;
-    grid-template-columns: 1.5fr 6fr;
-    margin-top: -1.4rem;
-    /* overflow-y: hidden; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 2px solid var(--primary-dark);
+    /* align-self: flex-end; */
+    
+} 
+footer pre{
+    text-align: center;
+    padding: 0 auto;
 }
-
-.welcome{
-  
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: auto;
-  background-color:cad2c5;
-  z-index: -1;
-}
-
-.welcome h1{
-  color: var(--primary-dark);
-  font-variant: small-caps;
-  font-family: var(--heading2), sans-serif;
-  font-size: 5rem;
-  margin-left: 5rem;
-  margin-bottom: 0;  
-}
-
-.welcome p{
-    margin-left: 5rem;
-    font-family: var(--text2);
-    color: var(--secondary-dark); 
-}   

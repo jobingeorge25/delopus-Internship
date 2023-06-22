@@ -1,85 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title> 
-    <link rel="stylesheet" href="styles/portfolio.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Urbanist&family=Abril+Fatface&family=Roboto+Slab">
-    <script src="/javascript/portfolio.js"></script>
-  </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">home</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#socials">Socials</a></li>
-      </ul>
-    </nav>
-    <div id="main-wrapper"> 
-        <section id="side-bar">
-            <div id="side">
-                <div id="image-container">
-                    <div class="overlay"></div>
-                    <img id="side-img" src="images\profile-square.jpg">
-                </div>
-                <div id="side-content">
-                    <h3 class="side-content-header" id="sch1" onclick="sc1()"
-                    >Contact</h3>
-                        <div class="side-content-hidden" id="sideContent1">
-                            <p>Phone :</p>
-                            <span>+91 87142 42502</span>
-                            <p>Email :</p>
-                            <span>@jobin25george02@gmail.com</span>
-                            <p>Address :</p>
-                            <span>Hidayath Nagar,Kalamassery</span>
-                            <p>Socials :</p>
-                            <div class="socials-icons">
-                              <div>
-                                <div class="overlay-icon"></div>
-                                <a target="_blank" href ="https://www.linkedin.com/in/jobin-george-62100b228/">
-                                  <img class="icon" src="/images/linkedin.png"/></a> 
-                              </div>
-                              <div>
-                                <a target="_blank" href="https://www.instagram.com/jobingeorgemusic/">
-                                  <img class="icon" src="/images/instagram.png"/></a>
-                              </div> 
-                              <div class="overlay-icon">  
-                                <a href = "mailto: jobin25george02@gmail.com">
-                                  <img  class="icon" src="/images/gmail.png"/></a>
-                              </div>
-                            </div>
-                        </div>
-                    <h3 class="side-content-header" id="sch2" onclick="sc2()"
-                    >Education</h3>
-                       <div class="side-content-hidden" id="sideContent2">
-                            <p>ISM 2020</p>
-                            <p>CUSAT 2024</p>
-                       </div>
-                    <h3 class="side-content-header" id="sch3" onclick="sc3()"
-                    onmouseover="sc3MOver()" onmouseout="sc3MOut()"
-                    >Language</h3>
-                        <div class="side-content-hidden" id="sideContent3">
-                            <p>English</p>
-                            <p>Malayalam</p>
-                        </div>
-                </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Urbanist&family=Abril+Fatface&family=Roboto+Slab">
+  <script src="/javascript/portfolio.js"></script>
+  <script src="https://kit.fontawesome.com/944562294d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">home</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#socials">Socials</a></li>
+    </ul>
+  </nav>
+  <!-- ********************main*************  -->
+  <div id="main-wrapper">
+    <section id="side-bar">
+      <div id="side">
+        <div id="image-container">
+          <div class="overlay"></div>
+          <img id="side-img" src="images\profile-square.jpg">
+        </div>
+        <div id="side-content">
+          <h3 class="side-content-header" id="sch1" onclick="sc1()">Contact</h3>
+          <div class="side-content-hidden" id="sideContent1">
+            <p>Phone :</p>
+            <span>+91 87142 42502</span>
+            <p>Email :</p>
+            <span>@jobin25george02@gmail.com</span>
+            <p>Address :</p>
+            <span>Hidayath Nagar,Kalamassery</span>
+            <p>Socials :</p>
+            <div class="socials-icons">
+              <div>
+                <div class="overlay-icon"></div>
+                <a target="_blank" href="https://www.linkedin.com/in/jobin-george-62100b228/">
+                  <img class="icon" src="/images/linkedin.png" /></a>
+              </div>
+              <div>
+                <a target="_blank" href="https://www.instagram.com/jobingeorgemusic/">
+                  <img class="icon" src="/images/instagram.png" /></a>
+              </div>
+              <div class="overlay-icon">
+                <a href="mailto: jobin25george02@gmail.com">
+                  <img class="icon" src="/images/gmail.png" /></a>
+              </div>
             </div>
-        </section>
-        <main>
-            <section class="welcome"id="welcome-section">
-                <h1>Jobin George</h1>
-                <p>Hi, I'm Jobin George, a passionate aspiring web developer. I am enthusiastic about creating engaging and user-friendly web experiences. Although I am in the early stages of my journey, I am dedicated to continuously learning and enhancing my skills in web development.</p>
-                <p>I am currently focused on building a strong foundation in HTML, CSS, and JavaScript, and I am eager to expand my knowledge by exploring popular frameworks like Bootstrap and libraries like React. Through personal projects and online courses, I am gaining hands-on experience and honing my skills in creating responsive layouts, optimizing performance, and writing clean and maintainable code.</p>
-            </section>
-            <footer>
-              <hr>
-            </footer>
-        </main>   
-    </div>
-    
-  </body>
+          </div>
+          <h3 class="side-content-header" id="sch2" onclick="sc2()">Education</h3>
+          <div class="side-content-hidden" id="sideContent2">
+            <p>ISM 2020</p>
+            <p>CUSAT 2024</p>
+          </div>
+          <h3 class="side-content-header" id="sch3" onclick="sc3()" onmouseover="sc3MOver()" onmouseout="sc3MOut()">
+            Language</h3>
+          <div class="side-content-hidden" id="sideContent3">
+            <p>English</p>
+            <p>Malayalam</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="welcome" id="welcome-section">
+        <h1>Jobin George</h1>
+        <h2>About Me</h2>
+        <p>Hi, I'm Jobin George, a passionate aspiring web developer. I am enthusiastic about creating engaging and
+          user-friendly web experiences. Although I am in the early stages of my journey, I am dedicated to continuously
+          learning and enhancing my skills in web development.</p>
+        <p>I am presently focused on building a strong foundation in HTML, CSS, and JavaScript, and I am eager to expand
+          my knowledge by exploring popular frameworks like Bootstrap and libraries like React. Through personal
+          projects and online courses, I am gaining hands-on experience and honing my skills in creating responsive
+          layouts, optimizing performance, and writing clean and maintainable code.</p>
+        <h2>Experience and Education</h2>
+        <p>I am currently pursuing my bachelor's degree in Computer Science at Cochin University, Kochi India. As a part
+          of our course I attended an internship at Delopus, a web platform for architects and designers to upskill and
+          showcase thier work. It was at this intership that i began my journey of web development.</p>
+        <footer>
+          <pre>&#169;Copyright Sample</pre>
+          
+        </footer>
+      </section>
+
+    </main>
+  </div>
+</body>
+
 </html>
 
 <!-- <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a> -->
