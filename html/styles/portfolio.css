@@ -63,41 +63,7 @@ nav ul li a:hover{
   background-color:var(--highlight);
 }
 
-/************Main****************/
-#main-wrapper{ 
-    display: grid;
-    height: 100vh;
-    position: relative;
-    grid-template-columns: 1.5fr 6fr;
-    margin-top: -1.4rem;
-    overflow-y: hidden;
-}
-
-.welcome{
-  
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: auto;
-  background-color:cad2c5;
-  z-index: -1;
-}
-
-.welcome h1{
-  color: var(--primary-dark);
-  font-variant: small-caps;
-  font-family: var(--heading2), sans-serif;
-  font-size: 5rem;
-  margin-left: 5rem;
-  margin-bottom: 0;  
-}
-
-.welcome p{
-    margin-left: 5rem;
-    font-family: var(--text2);
-    color: var(--secondary-dark); 
-   /* width: 85%;
-*/}
+    
 /*********Side-Bar**************/
 #side{
     padding: 2rem 0;
@@ -120,7 +86,11 @@ nav ul li a:hover{
 }
 
 .overlay{
-    background-color: var(--primary-dark);
+    background-image: linear-gradient(
+        to top,
+        var(--primary-dark),
+        rgba(255, 255, 255, 0)
+    );
     z-index: 12;
     position: absolute;
     width: 95%;
@@ -131,7 +101,7 @@ nav ul li a:hover{
 }
 
 .overlay:hover{
-    opacity: 50%;
+    opacity: 100%;
 }
 
 #side-img{
@@ -186,3 +156,58 @@ nav ul li a:hover{
     opacity: 100%;
     display: inline;
 }
+
+.socials-icons{
+    position: relative;
+    margin-left: 12%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.icon{
+    opacity: 1;
+    margin-top: 0.5rem;
+    max-width: 3rem;
+    height: auto;
+    filter: grayscale(1);
+    transition: .2s ease;
+}
+.icon:hover{
+    filter: grayscale(0);
+}
+
+
+/************Main****************/
+#main-wrapper{ 
+    display: grid;
+    height: 100vh;
+    position: relative;
+    grid-template-columns: 1.5fr 6fr;
+    margin-top: -1.4rem;
+    /* overflow-y: hidden; */
+}
+
+.welcome{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  background-color:cad2c5;
+  z-index: -1;
+}
+
+.welcome h1{
+  color: var(--primary-dark);
+  font-variant: small-caps;
+  font-family: var(--heading2), sans-serif;
+  font-size: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 0;  
+}
+
+.welcome p{
+    margin-left: 5rem;
+    font-family: var(--text2);
+    color: var(--secondary-dark); 
+}   
