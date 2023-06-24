@@ -1,0 +1,174 @@
+:root {
+    --primary-dark: #52796f;
+    /*234458*/
+    --primary-light: #84a98c;
+    /*446984*/
+    --secondary-dark: #2f3e46;
+    --secondary--light: #354f52;
+    --highlight: #ddeae7;
+    --heading1: "Fjalla One";
+    --heading2: "Abril Fatface";
+    /*serif*/
+    --text1: "Urbanist";
+    --text2: "Roboto Slab"
+        /*serif*/
+}
+
+body {
+    background-color: var(--highlight);
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-family: var(--heading2);
+    color: var(--secondary-dark);
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+main p {
+    font-family: var(--text1);
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.card-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.card {
+    width: 20rem;
+    height: 50vh;
+    background-image: linear-gradient(60deg,
+            var(--primary-light),
+            var(--primary-dark));
+    color: var(--highlight);
+    border-radius: 10px;
+    padding: 0 auto;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+
+.card-bind {
+    width: 1.5rem;
+    height: 50vh;
+    background-color: var(--secondary-dark);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.spiral {
+    width: 90%;
+    height: 2px;
+    border: 0.5px solid rgba(73, 75, 71, 0.615);
+    background-image: linear-gradient(var(--primary-light), white);
+    padding: 5px;
+    border-radius: 25%;
+    position: relative;
+    right: 30%;
+}
+
+.bookmark {
+    width: 4rem;
+    height: 1rem;
+    background-color: var(--secondary-dark);
+    position: relative;
+    top: -1rem;
+    left: 10rem;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.bookmark img {
+    width: 3rem;
+}
+
+#fcc-bookmark {
+    width: 4.5rem;
+}
+
+.bookmark #fcc {
+    width: 4rem;
+    position: relative;
+    top: 35%;
+}
+
+.card-heading {
+    background-image: linear-gradient(90deg,
+            var(--secondary--light),
+            var(--secondary-dark));
+    border-radius: 10px;
+    height: 35%;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: -1rem;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.card-heading h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-content {
+    padding: 0 1.5rem;
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-content ul li {
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.card-content ul li a {
+    color: var(--secondary-dark);
+    text-decoration: none;
+    font-size: large;
+    transition: 0.1s ease-in;
+}
+
+.card-content ul li a:hover {
+    color: var(--highlight);
+    border-bottom: 2px solid var(--highlight);
+}
+
+@media screen and (max-width : 1500px) {
+    .card-wrap {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width : 1150px) {
+    .card-wrap {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .card-wrap {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+}

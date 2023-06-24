@@ -1,0 +1,38 @@
+body{
+    background-color: #5782A8;
+  }
+  
+  h1{
+    color: #D6DDA4;
+    font-size: 8rem;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #img-div{
+    background-color: #253B50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px -10px;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  
+  }
+  #img-caption{
+    color: #5782A8;
+    font-variant: small-caps;
+    padding: 20px 0px 10px;
+    font-size: 2rem;
+  }
+  
+  #link{
+    bottom:0;
+    postion: absolute;
+    text-align:center;
+  }

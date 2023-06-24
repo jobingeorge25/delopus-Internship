@@ -1,0 +1,47 @@
+body{
+    background-color: #94b29a;
+    padding:20px;
+  }
+  
+  h1{
+    font-family: "Trebuchet MS";
+    font-variant: small-caps;
+    text-align: center;
+    padding: 20px;
+    color: #253438;
+  }
+  
+  p,label{
+    padding:10px 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #334737;
+  }
+  input,select{
+    font-family: "garamond";
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"]{
+    width: 100%;
+    height: 10%;
+  }
+  input[type="submit"]{
+    display:block;
+    background-color: #28382c;
+    color: #94b29a;
+    font-weight: bold;
+    font-family: "Tahoma";
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  textarea{
+    width: 100%;
+    height: 20%;
+  }
+  

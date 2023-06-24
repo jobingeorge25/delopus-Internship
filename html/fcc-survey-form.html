@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Survey Form</title>
+ <meta charset="UTF-8">
+ <meta 
+ name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/styles/fcc-styles-1.css">
+</head>   
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This forms helps to improve our products</p>
+<!--Form-->  
+  <form id="survey-form">
+    
+<!--Req-->
+    <label 
+    for="name" id="name-label"
+    >Name</label>
+    <input type="text" id="name" required
+    placeholder="John Doe" />
+    <label for="email" id="email-label"
+    >Email</label>
+    <input type="email" id="email" required
+    placeholder="John Doe"/>
+    <label for="number" id="number-label"
+    ">Number</label>
+    <input type="number" id="number"
+    placeholder="123456789" max="9999999999"
+    min="0"/><br>
+<!--Dropdown Menu-->
+  <label for="dropdown">Choose option from dropdown :<label/>
+  <select id="dropdown">
+    <option id="option">Option 1</option>
+    <option id="option">Option 2</option>
+  </select>  
+<!--Radio Buttons-->  
+  <p>Select any one: </p>
+  <input type="radio" name="rad" value="Option 1" />
+  <label for="rad">
+    Option 1</label><br>
+  <input type="radio" name="rad" value="Option 2"/>
+  <label for="rad">
+    Option 2</label><br>
+    <input type="radio" name="rad" value= "Option 3"/>
+  <label for="rad">
+    Option 3</label>
+  
+<!--Checkboxes-->
+  <p>Are you worthy?</p>
+
+  <input id="yes" type="checkbox" value="yes">
+  <label for="yes">Yes</label>
+  <input id="no" type="checkbox" value="no">
+  <label for="no">No</label>
+  <input id="maybe" type="checkbox" value="maybe">
+  <label for="maybe">Maybe</label>
+
+<!--Textarea-->
+  <p>Drop any comments</p>
+  <textarea>
+  </textarea>
+ 
+<!--Submit-->
+  <input id="submit" value="SUBMIT" type="submit"> 
+
+  </form>
+</body>  
+</html
