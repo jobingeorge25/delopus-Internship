@@ -55,12 +55,10 @@ function sc3(){
 function hamBar(){
     var sideBar=document.getElementById('side-bar')
     
-        if(sideBar.style.display=="none"){
-            sideBar.style.display="block";
+        if(sideBar.style.display=="block"){
+            sideBar.style.display="none";
         }else{
-            sideBar.style.display="none"
-        }
-            
-
-    
+            sideBar.style.display="block"
+        }   
 }
+/*block first why?//*/

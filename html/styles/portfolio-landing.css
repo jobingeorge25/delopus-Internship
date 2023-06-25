@@ -275,7 +275,7 @@ footer pre{
         margin-top: 0;
         height: 100vh;
         top: 2rem;
-        display: none;
+        display: none ;
     }
     #main-wrapper{
         margin: 0;
@@ -297,3 +297,8 @@ footer pre{
     }
     
 }
+/* @media screen and (min-width: 700px) {
+    #side-bar{
+        display: block;
+    }
+} */
