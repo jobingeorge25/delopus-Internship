@@ -51,3 +51,16 @@ function sc3(){
         sideContent3.classList.remove("side-content-visible");
     }        
 }
+
+function hamBar(){
+    var sideBar=document.getElementById('side-bar')
+    
+        if(sideBar.style.display=="none"){
+            sideBar.style.display="block";
+        }else{
+            sideBar.style.display="none"
+        }
+            
+
+    
+}
