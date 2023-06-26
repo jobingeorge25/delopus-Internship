@@ -1,17 +1,18 @@
-/*
-function sc1(){
-    if(sideContent1.className=="side-content-hidden"){
-        sideContent1.classList.add("side-content-visible");
+function pp(){
+    if(propic.className=="side-content-hidden"){
+        propic.classList.add("side-content-visible");
+        propic.classList.remove("side-content-hidden");
+        document.getElementById("sch1").style.display="none";
         document.getElementById("sch2").style.display="none";
         document.getElementById("sch3").style.display="none";
     }else{
-        document.getElementById("sideContent1").className="side-content-hidden";
+        propic.classList.add("side-content-hidden");
+        propic.classList.remove("side-content-visible");
+        document.getElementById("sch1").style.display="block";
         document.getElementById("sch2").style.display="block";
         document.getElementById("sch3").style.display="block";
-    }
-    
+    }        
 }
-*/
 
 function sc1(){
     if(sideContent1.className=="side-content-hidden"){
@@ -53,12 +54,18 @@ function sc3(){
 }
 
 function hamBar(){
-    var sideBar=document.getElementById('side-bar')
     
+    var sideBar=document.getElementById('side-bar');
+
         if(sideBar.style.display=="block"){
             sideBar.style.display="none";
         }else{
-            sideBar.style.display="block"
+            sideBar.style.display="block";
         }   
 }
 /*block first why?//*/
+
+function reload(){
+      location.reload();
+}
+

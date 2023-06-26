@@ -12,9 +12,9 @@
     <script src="https://kit.fontawesome.com/944562294d.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onresize="reload()">
     <nav id="navbar">
-        <div class="icon" onclick="hamBar()">
+        <div class="ham-icon" onclick="hamBar()">
             <i class="fa-solid fa-bars"></i>  
           </div>
         <ul>
@@ -25,11 +25,17 @@
     </nav>
     <section id="side-bar" style="display: none;">
         <div id="side">
-          <div id="image-container">
+          <div id="image-container1">
             <div class="overlay"></div>
             <img id="side-img" src="images\profile-square.jpg">
           </div>
           <div id="side-content">
+            <h3 class="side-content-header" id="sch0" onclick="pp()">Profile </h3>
+            <div class="side-content-hidden" id="propic">
+                <div id="image-container2">          
+                    <img id="side-img" src="images\profile-square.jpg">
+                </div>
+            </div>
             <h3 class="side-content-header" id="sch1" onclick="sc1()">Contact</h3>
             <div class="side-content-hidden" id="sideContent1">
               <p>Phone :</p>
